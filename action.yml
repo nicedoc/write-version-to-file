@@ -9,12 +9,16 @@ inputs:
     description: 'The placeholder to replace with latest git tag'
     required: false
     default: '${VERSION}'
+  version:
+    description: 'default git tag'
+    required: false    
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.filename }}
     - ${{ inputs.placeholder }}
+    - ${{ inputs.version }}
 branding:
   icon: 'hash'
   color: 'orange'

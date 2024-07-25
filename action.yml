@@ -1,4 +1,4 @@
-name: 'Write Version to File'
+name: 'Write Version to File More'
 author: 'Brett Dorrans'
 description: 'A GitHub Action that fetches the latest release tag within a repo and writes this to a file'
 inputs:
